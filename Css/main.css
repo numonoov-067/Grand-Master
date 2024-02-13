@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--very-dark-blue-main-bg);
+}
+:root {
+  --very-dark-blue-main-bg: #0d192c;
+  --Soft-Blue: #15263f;
+  --Cyan: #00fff8;
+  --wihte: #ffffff;
+  --text-color: #8bacd9;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--very-dark-blue-main-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 350px;
+  height: 596px;
+  border-radius: 15px;
+  background: var(--very-dark-blue-card-bg, #15263f);
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.card-title {
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 24px;
+  transition: 0.5;
+}
+.card-title:active {
+  color: var(--Cyan);
+}
+.card-text {
+  color: var(--text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  padding-top: 16px;
+}
+.card-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+}
+.card-around {
+  color: var(--Cyan);
+  display: flex;
+  column-gap: 6px;
+}
+.around-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card-around-cloog {
+  color: var(--text-color);
+  display: flex;
+  column-gap: 6px;
+}
+.person-image {
+  padding-right: 16px;
+}
+.card-person {
+  display: flex;
+  padding-top: 24px;
+  align-items: center;
+}
+.person-text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 5px;
+}
+.person-title {
+  color: var(--wihte);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.5;
+}
+.person-title:active {
+  color: var(--Cyan);
+}
+hr {
+  width: 302px;
+  margin-top: 24px;
+  background: #2e405a;
+}
+.card-image {
+  opacity: 0.503;
+}
+.card-image:active {
+  opacity: 0.503;
+  background: url(../img/Shape.png) no-repeat center center var(--Cyan);
+}
+.card-image {
+  display: block;
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.image_parda {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  opacity: 0.503;
+  background: var(--Cyan, #00fff8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+  transform: scale(0);
+}
+.card-image:hover .image_parda{
+  transform: scale(1);
+}
